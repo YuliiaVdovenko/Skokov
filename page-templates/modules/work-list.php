@@ -18,7 +18,7 @@ $container   = get_theme_mod( 'understrap_container_type' );?>
                         </div>
                         <p class="list-title"> <?php the_sub_field('subtitle-image1') ?></p>
                         <div class="hover">
-                            <img src="<?php the_sub_field('image-hover1') ?>">
+                            <img src="<?php the_sub_field('image-hover1') ?>" alt="work">
                             <h4> <?php the_sub_field('title-image-hover1') ?></h4>
                             <p> <?php the_sub_field('subtitle-image-hover1') ?></p>
                         </div>
@@ -32,7 +32,7 @@ $container   = get_theme_mod( 'understrap_container_type' );?>
                         </div>
                         <p class="list-title"> <?php the_sub_field('subtitle-image2') ?></p>
                         <div class="hover">
-                            <img src="<?php the_sub_field('image-hover2') ?>">
+                            <img src="<?php the_sub_field('image-hover2') ?>" alt="work">
                             <h4> <?php the_sub_field('title-image-hover2') ?></h4>
                             <p> <?php the_sub_field('subtitle-image-hover2') ?></p>
                         </div>
@@ -46,7 +46,7 @@ $container   = get_theme_mod( 'understrap_container_type' );?>
                         </div>
                         <p class="list-title"> <?php the_sub_field('subtitle-image3') ?></p>
                         <div class="hover">
-                            <img src="<?php the_sub_field('image-hover3') ?>">
+                            <img src="<?php the_sub_field('image-hover3') ?>" alt="work">
                             <h4> <?php the_sub_field('title-image-hover3') ?></h4>
                             <p> <?php the_sub_field('subtitle-image-hover3') ?></p>
                         </div>
@@ -60,7 +60,7 @@ $container   = get_theme_mod( 'understrap_container_type' );?>
                         </div>
                         <p class="list-title"> <?php the_sub_field('subtitle-image4') ?></p>
                         <div class="hover">
-                            <img src="<?php the_sub_field('image-hover4') ?> ">
+                            <img src="<?php the_sub_field('image-hover4') ?> " alt="work">
                             <h4> <?php the_sub_field('title-image-hover4') ?></h4>
                             <p> <?php the_sub_field('subtitle-image-hover4') ?></p>
                         </div>

@@ -88,7 +88,7 @@ $container   = get_theme_mod( 'understrap_container_type' );?>
 							<span class="phone">
 								<?php echo get_theme_mod('email_label'); ?>
 							</span>
-							<a class="email" href="mailto:<?php echo get_theme_mod('email_address'); ?>" class="tel">
+							<a class="email" href="mailto:<?php echo get_theme_mod('email_address'); ?>">
 								<?php echo get_theme_mod('email_address'); ?>
 							</a>
 						</div>

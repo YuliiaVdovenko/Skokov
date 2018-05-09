@@ -75,6 +75,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 				<!-- The pagination component -->
 				<?php the_posts_pagination(); ?>
+
 			</div>
 
 			<aside class="sidebar col-lg-4">

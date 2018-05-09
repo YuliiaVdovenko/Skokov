@@ -17,7 +17,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 	</div>
 </div>
 
-<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+<div class="<?php echo esc_attr( $container ); ?>">
 	<div class="error-page">
 		<div class="page-header">
 			<span class="page-span"> 404 </span>

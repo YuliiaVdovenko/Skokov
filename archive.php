@@ -72,6 +72,8 @@ $container   = get_theme_mod( 'understrap_container_type' );
 		</div>
 	</div>
 
+
+
 	<aside class="sidebar col-lg-4">
 		<?php dynamic_sidebar('right-page-sidebar'); ?>
 	</aside>

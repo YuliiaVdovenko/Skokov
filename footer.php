@@ -114,12 +114,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 									</span>
 									<ul class="d-flex flex-column tel">
 										<li>
-											<a href="<?php echo get_theme_mod('phone_number'); ?>" class="tel"> 
+											<a href="tel:<?php echo get_theme_mod('phone_number'); ?>" class="tel"> 
 												<?php echo get_theme_mod('phone_number'); ?> 
 											</a>
 										</li>
 										<li>
-											<a href="<?php echo get_theme_mod('phone_number2'); ?>" class="tel"> 
+											<a href="tel:<?php echo get_theme_mod('phone_number2'); ?>" class="tel"> 
 												<?php echo get_theme_mod('phone_number2'); ?> 
 											</a>
 										</li>
@@ -171,28 +171,28 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</span>
 				<?php endif; ?>
 			</div>
-			<nav class="navbar navbar-expand-md navbar-dark">
-				<?php if ( 'container' == $container ) : ?>
-					<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
-					<?php endif; ?>
-					<!-- Your site title as branding in the menu -->
-					<?php wp_nav_menu(
-						array(
-							'theme_location'  => 'primary',
-							'container_class' => 'd-flex',
-							'container_id'    => 'navbar-main',
-							'menu_class'      => 'footer-nav d-flex flex-wrap justify-content-between',
-							'fallback_cb'     => '',
-							'menu_id'         => 'main-menu',
-							'walker'          => new understrap_WP_Bootstrap_Navwalker(),
-						)
-						); ?>
-					</div>
+				<nav class="navbar navbar-expand-md navbar-dark">
+					<?php if ( 'container' == $container ) : ?>
+						<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+						<?php endif; ?>
+						<!-- Your site title as branding in the menu -->
+						<?php wp_nav_menu(
+							array(
+								'theme_location'  => 'primary',
+								'container_class' => 'd-flex',
+								'container_id'    => 'navbar-footer',
+								'menu_class'      => 'footer-nav d-flex flex-wrap justify-content-between',
+								'fallback_cb'     => '',
+								'menu_id'         => 'footer-menu',
+								'walker'          => new understrap_WP_Bootstrap_Navwalker(),
+							)
+							); ?>
+						</div>
 				</nav>
 			</div>
-		</div>
+	</div>
 
 
 
-		<?php wp_footer(); ?>
+			<?php wp_footer(); ?>
 

@@ -3990,11 +3990,11 @@ $(document).ready(function () {
     });
 
     var $portfolio = $('.portfolio-list').isotope({
-            itemSelector: '.portfolio-item'
-        });
+        itemSelector: '.portfolio-item'
+    });
 
     $portfolio.imagesLoaded().progress( function() {
-        $portfolio.masonry('layout');
+        $portfolio.isotope('layout');
     });
 
 // bind filter button click

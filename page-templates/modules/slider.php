@@ -25,34 +25,34 @@ $container   = get_theme_mod( 'understrap_container_type' );?>
 						<div class="carousel-item <?php echo $active ?>">
 							<ul class="slider-list col-sm-6">
 								<li class="slider-item col-sm-3">
-									<img src="<?php the_sub_field('image1') ?>">
+									<img src="<?php the_sub_field('image1') ?>" alt="member">
 								</li>
 								<li class="col-sm-3 slider-item">
-									<img src="<?php the_sub_field('image2') ?>">
+									<img src="<?php the_sub_field('image2') ?>" alt="member">
 								</li>
 								<li class="col-sm-3 slider-item">
-									<img src="<?php the_sub_field('image3') ?>">
+									<img src="<?php the_sub_field('image3') ?>" alt="member">
 								</li>
 								<li class="col-sm-3 offset-sm-3 slider-item">
-									<img src="<?php the_sub_field('image4') ?>">
+									<img src="<?php the_sub_field('image4') ?>" alt="member">
 								</li>
 								<li class="col-sm-3 slider-item">
-									<img src="<?php the_sub_field('image5') ?>">
+									<img src="<?php the_sub_field('image5') ?>" alt="member">
 								</li>
 								<li class="col-sm-3 slider-item">
-									<img src="<?php the_sub_field('image6') ?>">
+									<img src="<?php the_sub_field('image6') ?>" alt="member">
 								</li>
 								<li class="col-sm-3 slider-item">
-									<img src="<?php the_sub_field('image7') ?>">
+									<img src="<?php the_sub_field('image7') ?>" alt="member">
 								</li>
 								<li class="col-sm-3 slider-item">
-									<img src="<?php the_sub_field('image8') ?>">
+									<img src="<?php the_sub_field('image8') ?>" alt="member">
 								</li>
 								<li class="col-sm-3 slider-item">
-									<img src="<?php the_sub_field('image9') ?>">
+									<img src="<?php the_sub_field('image9') ?>" alt="member">
 								</li>
 								<li class="col-sm-3 offset-sm-3 slider-item">
-									<img src="<?php the_sub_field('image10') ?>">
+									<img src="<?php the_sub_field('image10') ?>" alt="member">
 								</li>
 							</ul>
 							<div class="text col-12 col-sm-6">

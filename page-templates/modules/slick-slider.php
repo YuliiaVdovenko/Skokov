@@ -13,7 +13,7 @@ $container   = get_theme_mod( 'understrap_container_type' );?>
 			<ul class="slick-list logo-list">
 				<?php while (have_rows ('clients_logo_list')) : the_row ();?>
 					<li class="slick-item col-3">
-						<img src="<?php the_sub_field('clients_logo') ?>">
+						<img src="<?php the_sub_field('clients_logo') ?>" alt="logo">
 					</li>
 				<?php endwhile;?>
 			</ul>
