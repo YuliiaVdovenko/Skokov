@@ -1,0 +1,81 @@
+
+//-----------------------Blog page Style -----------------------
+
+.blocquaote {
+  background-color: $main-color;
+  padding: 1rem 1rem;
+  text-align: center;
+  blockquote {
+    font: italic 1.7rem/2rem $main-font;
+    color: $second-color;
+  }
+  .quote {
+    font-size: 1.5rem;
+    text-align: right;
+    display: inherit;
+  }
+}
+
+.post-item {
+  p{
+    font: italic 1.7rem/2rem "Century Gothic";
+    color: $second-color;
+    font-weight: 700;
+    background-color: $main-color;
+  }
+}
+.post-list {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  .post-item {
+    padding-bottom: 3rem;
+  }
+  .img-title {
+    a{
+      font-size: 1.7rem;
+      line-height: 1.7rem;
+      text-align: left;
+      display: inline-block;
+      padding: 1rem 0;
+      font-weight: 700;
+    }
+    a:hover {
+      color: $red-color-hover;
+    }
+  }
+}
+
+.img-title-div {
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+}
+
+.nav-links {
+  padding-bottom: 3rem;
+  span {
+    font-size: 2rem;
+    line-height: 1.2rem;
+    padding: 1rem;
+    background-color: $second-color;
+    color: $main-color;
+    display: inline-block;
+    margin: 0 1rem;
+  }
+  a {
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: $main-color;
+    color: $second-color;
+    display: inline-block;
+    margin: 0 1rem;
+  }
+  .next, .prev {
+    display: none;
+  }
+}

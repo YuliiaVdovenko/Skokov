@@ -1,0 +1,123 @@
+//-------------------Welcome to our Team Page ------------
+
+
+.about-team {
+  p {
+    color: $second-color;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .team-description {
+    padding-top: 5rem;
+    }
+  .excerpt {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  .bold {
+    p {
+      font-weight: 700;
+    }
+  }
+  .team-title {
+    color: $second-color;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+  }
+  .column {
+    -webkit-columns: 200px 2;
+    -moz-columns: 200px 2;
+    columns: 200px 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+  .skills-description {
+    text-align: center;
+    padding-top: 5rem;
+    p {
+      color: $second-color;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      padding: 2rem 0;
+      @media (min-width: 768px) {
+      padding: 2rem 5rem;
+        }
+      }
+    }
+  .skills {
+    color: $main-color;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2rem;
+    text-transform: uppercase;
+    background-color: $second-color;
+    padding: 1rem 2rem;
+    display: inline-block;
+    text-align: center;
+  }
+  .skills-list {
+    .skills-item {
+      margin-bottom: 1rem;
+    }
+    .skills-div-background {
+      background: $second-color;
+      align-items: center;
+    }
+    .skills-number {
+      color: $main-color;
+      font-family: $main-font;
+      font-size: 1.7rem;
+      font-weight: 400;
+      line-height: 2rem;
+      text-transform: uppercase;
+      padding: 0 1rem;
+    }
+    .progress-skills-bar {
+      background-color: $main-color;
+      color: $second-color;
+      text-align: center;
+      padding: 0.7rem 0;
+      span {
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 2rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .members-list {
+    padding-top: 1rem;
+    padding-bottom: 7em;
+  }
+  .members-foto {
+    img {
+      width: 70%;
+      border: 2px solid $main-color;
+      border-radius: 50%;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .members-position {
+    color: $main-color;
+    font-family: $main-font;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    background: $second-color;
+    padding: 0.5rem 1rem;
+    width: 80%;
+    margin: auto;
+    & a{
+      @extend .members-position;
+    }
+  }
+}
+
+
+
+
+

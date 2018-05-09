@@ -1,0 +1,217 @@
+
+// -------------- Footer Common Settings --------------------
+.footer {
+  background-color: $second-color;
+  padding: 2rem 0;
+  .footer-title {
+    color: $white-link;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 1rem 0;
+  }
+  p {
+    color: $white-link;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding-bottom: 1rem;
+
+    //-------------------- button learn more ---------------------
+    a:link, a:visited {
+      color: $white-link;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      padding: 5px;
+      background-color: $black-background;
+      border-bottom: 2px solid $main-color;
+      display: inline-block;
+    }
+    a:hover {
+      background-color: $main-color;
+      color: $second-color;
+      border-bottom: 2px solid $second-color;
+    }
+  }
+}
+
+// ----------------------- Instagram Photo Stream --------------------
+.instagram-pics {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  li {
+    padding-bottom: 0.7rem;
+    width: 32%;
+  }
+}
+
+// ------------------ Recent Tweets ---------------------------
+.tp_recent_tweets{
+  li {
+    color: $white-link;
+    font-family: $main-font;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+    background-image: url("../images/twitterbirdblack.png");
+    background-size: 3rem;
+  }
+  a:link, a:visited {
+    color: $main-color;
+    font-style: normal;
+  }
+  a:hover {
+    color: #fff0b2;
+  }
+}
+
+//---------------------- List of social link -------------------------
+.social-list {
+  li {
+    padding: 0.5rem;
+  }
+  li:first-child {
+    padding-left: 1.5rem;
+  }
+  .social:link, .social:visited {
+    font-size: 1.4rem;
+    padding: 0.7rem;
+    color: $white-link;
+    background-color: $black-background;
+    display: inline-block;
+  }
+  .social:hover {
+    color: $black-background;
+    background-color: $main-color;
+  }
+}
+
+//-------------------- list of contacts --------------------
+.contact-list {
+  padding-bottom: 2rem;
+  li {
+    padding-top: 1rem;
+    .icon-twitter {
+      font-size: 2rem;
+      color: $white-link;
+    }
+  }
+  address {
+    color: $white-link;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    margin-bottom: 0;
+  }
+  .social:link, .social:visited {
+    font-size: 1.4rem;
+    padding: 0.7rem;
+    color: $white-link;
+    background-color: $black-background;
+    display: inline-block;
+  }
+  .social:hover {
+    color: $black-background;
+    background-color: $main-color;
+  }
+  .social-icon {
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    color: $white-link;
+    background-color: $black-background;
+    margin-right: 1rem;
+  }
+  .social-icon-cursor:hover {
+    cursor: pointer;
+  }
+  .icon-map {
+    padding: 0.7rem 1rem;
+  }
+  .phone {
+    color: $white-link;
+    font-size: 1.4rem;
+    display: inline-block;
+  }
+  .tel li {
+    padding: 0 1rem;
+  }
+  .tel:link, .tel:visited {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    color: $white-link;
+  }
+  .tel:hover {
+    color: $main-color;
+  }
+
+  .email {
+    color: $white-link;
+    font-size: 1.4rem;
+  }
+}
+
+//------------------ mail chimp form ------------------------
+.mc4wp-form-fields {
+  .email {
+    font: 400 1.5rem/1.7rem $main-font;
+    color: $white-link;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $main-color;
+  }
+  .submit-label {
+    font-size: 1.5rem;
+    color: $white-link;
+    background-color: $black-background;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+  .submit-label:hover {
+    background-color: $main-color;
+    color: $second-color;
+  }
+  .button {
+    display: none;
+  }
+}
+
+// -------------------- Site Info + Footer Navigation ----------------
+.footer-background {
+  background-color: $black-background;
+  padding: 2rem 0;
+  text-align: center;
+  .siteinfo {
+    .footer-info {
+      padding-right: 0.5rem; 
+      color:$white-link;
+      font-size: 1.2rem;
+    }
+    .info-link:link, .info-link:visited {
+      padding-right: 0.5rem; 
+      color: $white-link;
+      font-size: 1.2rem;
+    }
+    .info-link:hover {
+      color: $main-color;
+    }
+    .info-link:before, .info-link:after {
+      content: "-";
+      font-size: 1.4rem;
+      color: $white-link;
+    }
+  }
+}
+
+.footer-nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  a:link, a:visited {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: $white-link;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+  }
+  a:hover {
+    color: $main-color;
+  }
+}

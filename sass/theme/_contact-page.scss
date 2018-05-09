@@ -1,0 +1,127 @@
+
+// ------------ Google Map ----------------
+.contact-map {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+
+//--------------------- Contact-form ------------------
+.wpcf7 {
+  max-width: 100%;
+  input[type=text], input[type=email], textarea {
+    font-size: 1.5rem;
+    color: $second-color;
+    border-color: transparent;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    &:focus {
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+  p {
+    display: inline-block;
+  }
+  input[type=submit] {
+    color: $white-link;
+    font-family: "Century Gothic";
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    background-color: $black-background;
+    border: none;
+    border-bottom: 1px solid $main-color;
+    padding: 0.5rem 1rem;
+    &:hover {
+      background-color: $main-color;
+      color: $second-color;
+      border-bottom: 1px solid $second-color;
+    }
+    &:focus{
+      background-color: $main-color;
+      color: $second-color;
+      border-bottom: 1px solid $second-color;
+      box-shadow: none;
+    }
+    &:active {
+      box-shadow: none!important;
+      background-color: $main-color!important;
+      border: none!important;
+      border-bottom: 1px solid $second-color!important;
+    }
+  }
+}
+.contact-form {
+  padding-top: 2rem;
+}
+
+//-------------------- Contact-block ------------------
+
+.contact-block {
+  padding: 3rem 0;
+}
+
+.contact-title {
+  color: $main-color;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: $second-color;
+  padding: 1rem 2rem;
+  display: inline-block;
+}
+
+//----------------------- Address Block ------------------------
+.contact-page-list {
+  padding-top: 2rem;
+  li {
+    padding-top: 1rem;
+    .icon-twitter {
+      font-size: 2rem;
+      color: $white-link;
+    }
+  }
+  address {
+    color: $second-color;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 0;
+  }
+  .social-icon {
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    color: $white-link;
+    background-color: $black-background;
+    margin-right: 1rem;
+  }
+  .icon-map {
+    padding: 0.7rem 1rem;
+  }
+  .phone {
+    color: $second-color;
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+  .tel li {
+    padding: 0 1rem;
+  }
+  .tel:link, .tel:visited {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: $second-color;
+  }
+  .tel:hover {
+    color: $main-color;
+  }
+  .email {
+    color: $main-color;
+    font-size: 1.5rem;
+    background-color: $second-color;
+    padding: 0.5rem 1rem;
+  }
+  .email:hover {
+    color: $second-color;
+    background-color: $main-color;
+  }
+}

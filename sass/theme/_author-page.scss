@@ -1,0 +1,68 @@
+.author-posts {
+  padding-top: 2rem;
+}
+.author-title {
+  background-color: $second-color;
+  color: $main-color;
+  font-size: 2rem;
+  margin-top: 0;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+dl {
+  display: none;
+}
+
+.posts-by-author {
+  padding: 2rem 0;
+  &:first-child {
+    padding-top: 0;
+  }
+}
+
+.posts-by-author-item {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  border-bottom: 1px solid $main-color;
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+  a, span {
+    font-size: 1.5rem;
+    color: $second-color;
+    line-height: 2rem;
+    display: inline-block;
+    &.post-name {
+      font-weight: 700;
+      background-color: $main-color;
+      padding: 1rem;
+      display: block;
+      text-align: center;
+    }
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .posted-on {
+    display: inherit;
+  }
+  .posts-categories {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $second-color;
+    line-height: 2rem;
+    margin-top: 1rem;
+  }
+  a[rel~="category"] {
+    background-color: $second-color;
+    color: $main-color;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  a[rel~="category"]:hover {
+    color: $second-color;
+    background-color: $main-color;
+  }
+}

@@ -1,0 +1,263 @@
+
+//------------------- Slider ---------------------------
+
+.slider-background {
+  background-size: cover;
+}
+.slider {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.slider-list {
+  display: none;
+  margin: auto;
+  @media (min-width: 576px) {
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+  }
+}
+.home-indicators {
+  width: 100%;
+}
+.home-slider {
+  background: transparent;
+  .home-indicators {
+    margin: -3rem;
+    cursor: pointer;
+    .active {
+      background-color: $main-color;
+      border: 2px solid $second-color;
+    }
+    li {
+      height: 2rem;
+      border-radius: 0;
+      background-color: $second-color;
+    }
+  }
+}
+.prev {
+  background-color: transparent;
+}
+.prev-a:link, .prev-a:visited {
+  display: none;
+  @media (min-width: 768px) {
+    width: 5%;
+    left: -5rem;
+  }
+}
+
+.next-a:link, .next-a:visited {
+  display: none;
+  @media (min-width: 768px) {
+    width: 5%;
+    right: -5rem;
+  }
+}
+
+.slider-item {
+  padding: 0;
+}
+
+
+div.text {
+  float: left;
+  padding-top: 5%;
+  text-align: center;
+  margin: auto;
+  @media (min-width: 576px) {
+    text-align: left;
+  }
+  .slider-subtitle {
+    padding: 0.5rem 0;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 2.7rem;
+    background-color: $second-color;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: inline;
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+      line-height: 3rem;
+    }
+  }
+  .slider-title {
+    color: $second-color;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    background-color: $main-color;
+    display: inline;
+    @media (min-width: 768px) {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+    @media (min-width: 993px) {
+      font-size: 5rem;
+      line-height: 7rem;
+    }
+  }
+  .order:link, .order:visited {
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 5px;
+    background-color: $black-background;
+    border-bottom: 2px solid $main-color;
+    float: right;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .order:hover {
+    background-color: $main-color;
+    color: $second-color;
+    border-bottom: 2px solid $second-color;
+  }
+}
+
+//------------------- Work-list ---------------------------
+
+.work-list {
+  .work-list-item:hover div.hover {
+    display: block;
+  }
+  .work-list-item {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+}
+
+.before-hover {
+  position: relative;
+}
+
+.back-color {
+  background-color: $main-color;
+  padding: 1.7rem 0;
+  i {
+    font-size: 10rem;
+    color: $second-color;
+  }
+  .work-title{
+    color: $second-color;
+    font-family: Code;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    padding: 1rem 0;
+    text-transform: uppercase;
+  }
+}
+.list-title {
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.26px;
+  background-color: $second-color;
+  margin-bottom: 0;
+  padding: 3.3rem;
+}
+
+div.hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: $second-color;
+  img {
+    width: 70%;
+    @media (min-width: 401px) {
+      width: 45%;
+    }
+    @media (min-width: 576px) {
+      width: 100%;
+    }
+    @media (min-width: 1200px) {
+      width: 90%;
+    }
+  }
+  h4 {
+    font: 300 1.6rem/2rem $main-font;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: $second-color;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: 0.26px;
+    background-color: $second-color;
+    text-align: right;
+    padding-right: 1rem;
+  }
+}
+
+
+//---------------------------------Portfolio-list----------------------------------
+.portfolio-title {
+  font-size: 1.8em;
+  position: relative;
+  width: 30%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  background-color: $second-color;
+  color: $main-color;
+  text-align: center;
+  text-transform: uppercase;
+}
+.portfolio-title:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  left: -116%;
+  right: 105%;
+  background-color: $main-color;
+}
+
+.portfolio-title:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  right: -115%;
+  left: 105%;
+  background-color: $main-color;
+}
+
+.element-item {
+  padding: 0;
+}
+
+//-------------------------------------Slick Slider ---------------------------------
+
+.clients {
+  .logo-list {
+    margin-bottom: 5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    .slick-prev {
+      left:0;
+      background-color: $second-color;
+    }
+    .slick-next {
+      right: 0;
+      background-color: $second-color;
+    }
+    .slick-prev:before {
+      font-size: 2rem;
+      color: $white-link;
+    }
+    .slick-next:before {
+      font-size: 2rem;
+      color: $white-link;
+    }
+  }
+}
+

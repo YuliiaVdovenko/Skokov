@@ -1,0 +1,43 @@
+
+
+//-------------------- header -----------------------
+
+.button-border:focus {
+  outline: none;
+  border: none;
+}
+.nav-span {
+  border-radius: 5px;
+  color: $main-color;
+  font-size: 3rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid;
+}
+
+.bar-list {
+  width: 100%;
+  align-items: center;
+  li {
+    a.nav-link:link, a.nav-link:visited {
+      font-size: 2rem;
+      font-family: "Code";
+      line-height: 2.5rem;
+      color: $second-color;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      padding: 5px;
+      margin: 0.5rem 0.5rem;
+      @media (min-width: 993px) {
+        font-size: 3rem;
+        line-height: 3.2rem;
+      }
+    }
+    a.nav-link:hover {
+      background-color: $main-color;
+    }
+  }
+}
+
+
+
+

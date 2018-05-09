@@ -1,0 +1,94 @@
+//-----------------Portfolio Page ---------------
+
+.filter-list-span {
+  color: $second-color;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  display: inline-block;
+    &:hover {
+    background-color: $main-color;
+    cursor: pointer;
+  }
+}
+
+.filter-img-list {
+  padding-bottom: 3rem;
+  li {
+    padding-bottom: 3rem;
+  }
+}
+
+.portfolio-item {
+  img {
+    width: 100%;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+  }
+  .img-border:hover img{
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+  }
+}
+
+.img-border {
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-hover {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: $main-color;
+  opacity: 0.6;
+  text-align: center;
+  margin: auto;
+}
+
+.img-border:hover .portfolio-hover {
+  display: flex;
+  -webkit-animation: cssAnimation 1s 1 ease;
+  -moz-animation: cssAnimation 1s 1 ease;
+  -o-animation: cssAnimation 1s 1 ease;
+  @-webkit-keyframes cssAnimation {
+    from {
+      -webkit-transform: scale(2);
+    }
+    to {
+      -webkit-transform: scale(1);
+    }
+  }
+  @-moz-keyframes cssAnimation {
+    from {
+      -moz-transform: scale(2);
+    }
+    to {
+      -moz-transform: scale(1);
+    }
+  }
+  @-o-keyframes cssAnimation {
+    from {
+      -o-transform: scale(2);
+    }
+    to {
+      -o-transform: scale(1);
+    }
+  }
+}
+
+.hover-a:link, .hover-a:visited {
+  font-size: 2rem;
+  color: #ffffff;
+  padding: 2rem 3rem;
+  background-color: $second-color;
+}

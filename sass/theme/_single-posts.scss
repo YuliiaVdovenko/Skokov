@@ -1,0 +1,314 @@
+main {
+  padding-top: 2rem;
+}
+
+//-------------------------Page Name------------------------------//
+.slider-back {
+  background: url("../images/slider-bg.png") center/cover no-repeat;
+  background-size: cover;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.blog-name {
+  font-size: 1.8rem;
+  padding: 1rem 3rem 1rem 1rem;
+  background-color: $second-color;
+  color: $main-color;
+  text-transform: uppercase;
+  display: inline-block;
+  @media (min-width: 576px) {
+    font-size: 2.8rem;
+  }
+  @media (min-width: 768px) {
+    font-size: 3.8rem;
+  }
+}
+
+//-------------------------Image with title------------------------------//
+
+.img-title-div {
+  background-color: $main-color;
+  padding: 1rem 1rem;
+  text-align: center;
+  @media (min-width: 576px){
+    text-align: right;
+  }
+  .img-title {
+    color: $second-color;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    @media (min-width: 768px){
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+    @media (min-width: 993px){
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+  }
+  .post-likes {
+    color: $second-color;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .post-likes:hover {
+    color: $red-color-hover;
+    cursor: pointer;
+  }
+  .by {
+    color: $second-color;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .before-after:before {
+    content: "  /";
+  }
+  .before-after:after {
+    content: "  /";
+  }
+}
+
+.img-title-div:before {
+  content: "";
+  display: block;
+  position: relative;
+  top: -2rem;
+  left: 90%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 1rem 1rem 1rem;
+  border-color: transparent transparent $main-color transparent;
+}
+
+
+
+//-------------------------content------------------------------//
+.content-div{
+  padding: 2rem 0;
+  p {
+    color: $second-color;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    margin-bottom: 0;
+    @media (min-width: 768px){
+      font-size: 1.7rem;
+      line-height: 2.5rem;
+    }
+  }
+  img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 2rem 0;
+  }
+}
+
+//-------------------------Share list------------------------------//
+.share-list {
+  padding-bottom: 3rem;
+  .likes-number {
+    width: 100%;
+    @media (min-width: 576px) {
+      width: 70%;
+    }
+    @media (min-width: 992px) {
+      width: 58%;
+    }
+  }
+  .likes-number-item {
+    padding: 0.5rem;
+  }
+  .likes-number-item:first-child {
+    padding-left: 0;
+  }
+  .likes-number-item:last-child {
+    padding-right: 0;
+  }
+  .likes-number-span {
+    font-size: 1.2rem;
+    background-color: $main-color;
+    padding: 0.7rem;
+  }
+  .related-post-name {
+    display: inline-block;
+    color: $main-color;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    background-color: $second-color;
+    margin: 1rem 0;
+  }
+}
+
+.likes-number-item {
+  .social:link, .social:visited {
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    color: $white-link;
+    background-color: $black-background;
+  }
+  .social:hover {
+    color: $black-background;
+    background-color: $main-color;
+  }
+}
+
+
+//-------------------------Related Posts List-----------------------------//
+
+.related-post-div {
+  border-top: 1px solid $gray-border;
+  padding: 2rem 0;
+  .post {
+    margin-bottom: 2rem;
+  }
+  .related-img-title {
+    a {
+      display: inline-block;
+      font-size: 1.5rem;
+      line-height: 1.7rem;
+      text-transform: uppercase;
+      text-align: left;
+      color: $second-color;
+    }
+  }
+  .related-post-name {
+    display: inline-block;
+    color: $main-color;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    background-color: $second-color;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+//-------------------------Comments List-----------------------------//
+
+.comments-list {
+  border-top: 1px solid $gray-border;
+  padding: 2rem 0;
+  h2 {
+    display: inline-block;
+    color: $main-color;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    background-color: $second-color;
+    margin: 1rem 0;
+  }
+}
+
+.avatar {
+  img {
+    width: 50px;
+    max-width: 50px;
+  }
+}
+
+.comments-text {
+  padding-left: 1rem;
+  p {
+    font-size: 1.5rem;
+    color: $second-color;
+    line-height: 2rem;
+    padding: 0.5rem 0;
+  }
+  .comment-author {
+    a:link, a:visited {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: $second-color;
+    }
+    a:hover {
+      color: $red-color-hover;
+    }
+    .comment-time {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: $second-color;
+    }
+    .comment-time:before {
+      content: " / ";
+      color: $second-color;
+    }
+    .comment-time:after {
+      content: " / ";
+      color: $second-color
+    }
+  }
+}
+
+.comment-list {
+  padding-top: 2rem;
+  .children {
+    padding-left: 3rem;
+  }
+}
+
+//---------------- Leave Comment Form --------------------
+
+.leave-comment-form {
+  input, textarea {
+    color: $second-color;
+    font-size: 1.5rem;
+    border: none;
+    background-color: $white-link;
+    padding-top: 1.5rem;
+  }
+  input:focus, textarea:focus {
+    border-color: transparent;
+    box-shadow: none;
+  }
+}
+.form-submit {
+  .comment-button {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    background-color: $second-color;
+    color: $white-link;
+    cursor: pointer;
+    padding: 1rem;
+    float: right;
+    border: none;
+  }
+  .comment-button:hover {
+    background-color: $main-color;
+    color: $second-color;
+    cursor: pointer;
+  }
+}
+
+
+.leave-comment-title {
+    display: inline-block;
+    color: $main-color;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    background-color: $second-color;
+    margin: 3rem 0;
+  }
+  .comment-reply-title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin: 3rem 0;
+    a:link, a:visited {
+      display: inline-block;
+      color: $main-color;
+      font-size: 1.5rem;
+      text-transform: none;
+      background-color: $second-color;
+      padding: 1rem 2rem;
+    }
+    a:hover {
+      color: $second-color;
+      background-color: $main-color;
+    }
+  }
+

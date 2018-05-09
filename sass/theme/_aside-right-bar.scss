@@ -1,0 +1,120 @@
+.sidebar {
+  padding-top: 2rem;
+  .aside-bar {
+    background-color: $second-color;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  form {
+    label {
+      display: none;
+    }
+    .input-group{
+      width: 80%;
+      margin: auto;
+    }
+    .field {
+      background-color: $white-link;
+      color: $second-color;
+      border-radius: 30px;
+      border: none;
+      padding: 1rem;
+      font-size: 1.4rem;
+    }
+    .submit {
+      background-color: $white-link;
+      color: $white-link;
+      border-radius: 0 30px 30px 0;
+      border: none;
+      padding: 1rem;
+      font-size: 1.4rem;
+    }
+    .btn:active, .btn-primary:active{
+      border: none!important;
+      background-color: $white-link!important;
+      border-color: transparent!important;
+    }
+    .btn:focus, .btn-primary:focus {
+      box-shadow: none!important;
+      border: none!important;
+    }
+    .input-group-btn:before {
+      content: "\1F50D";
+      position: absolute;
+      left: 85%;
+      top: 20%;
+      cursor: pointer;
+      font-size: 2rem;
+    }
+    .field:focus, .field:active {
+      border: none;
+      box-shadow: none;
+    }
+  }
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    color: $white-link;
+    font-size: 1.5rem;
+    li {
+      padding-left: 1rem;
+      width: 50%;
+    }
+    a:link, a:visited {
+      color: $white-link;
+      font-size: 1.5rem;
+      line-height: 2.2rem;
+      text-transform: uppercase;
+      &:hover {
+        color: $main-color;
+      }
+    }
+    a:before {
+      content: "\003E";
+      background-color: $main-color;
+      padding: 0 0.5rem;
+      color: $second-color;
+      margin-right: 1rem;
+    }
+  }
+  .aside-title {
+    color: $main-color;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    padding: 1rem 1rem;
+  }
+}
+
+.tagcloud {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  a:link, a:active {
+    color: $second-color;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: $main-color;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  a:hover {
+    color: $main-color;
+    background-color: $second-color;
+  }
+}
+
+.rpwwt-widget {
+  ul li {
+    width: 100%;
+    a:before {
+      display: none;
+    }
+    .rpwwt-post-date {
+      padding: 1.5rem;
+      float: right;
+      color: $main-color;
+    }
+  }
+}

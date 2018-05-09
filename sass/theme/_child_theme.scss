@@ -1,0 +1,46 @@
+@import "../css/reset.css";
+
+html {
+  font-size: 10px;
+}
+
+span, p, h2, h3, h4, h5, i, time, address {
+  font-family: $main-font;
+  font-weight: 400;
+}
+
+a:link, a:visited, a:hover {
+  font: 400 1rem/1.2rem $main-font, Regular;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.section-title {
+  color: $second-color;
+  font-size: 3rem;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section-subtitle {
+  color: $second-color;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  padding: 0.7rem 0;
+  @media (min-width: 576px) {
+    font-size: 2rem;
+  }
+}
+
+.section-p {
+  color: $second-color;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding: 2rem 0;
+  text-align: center;
+}

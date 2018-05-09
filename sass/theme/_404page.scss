@@ -1,0 +1,45 @@
+
+.error-page {
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.page-header {
+  .page-span {
+    color: $second-color;
+    font-size: 20rem;
+    line-height: 20rem;
+    text-transform: uppercase;
+    display: block;
+  }
+  .page-title {
+    color: $main-color;
+    font-size: 9rem;
+    font-weight: 700;
+    background-color: $second-color;
+  }
+}
+.page-content {
+  a {
+    color: $white-link;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    background: $black-background;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    display: inline-block;
+  }
+  a:hover {
+    color: $main-color;
+  }
+  span {
+    color: $second-color;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    background-color: $main-color;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+  }
+}
